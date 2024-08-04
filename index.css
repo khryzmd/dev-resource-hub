@@ -13,7 +13,7 @@ body {
 
 /* Home Section*/
 .carousel-item {
-  height: 500px;
+  height: 60vh;
 }
 .carousel-item img {
   height: 100%;
@@ -23,6 +23,52 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+#featured .carousel-caption button {
+  width: 50%;
 }
 /* End of Home Section */
+
+/* Categories Section*/
+#categories-section .card-link {
+  color: green;
+  text-decoration: underline;
+}
+
+#categories-section .card-link:hover {
+  color: darkgreen;
+  text-decoration: none;
+}
+
+/* End of Categories Section */
+
+/* About Section */
+#google-maps {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+#google-maps iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+#mission p {
+  font-size: 1.3rem;
+}
+#contact-form textarea {
+  height: 8rem;
+}
+/* End of About Section */

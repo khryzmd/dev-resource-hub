@@ -30,7 +30,7 @@
     <header>
       <!-- Navbar Section-->
       <nav class="navbar navbar-expand-lg bg-success">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand text-light" href="#">Dev Resource Hub</a>
           <button
             class="navbar-toggler"
@@ -79,158 +79,417 @@
     <main>
       <!-- Home Section -->
 
-      <section id="home" class="container d-flex my-5 justify-content-between">
-        <div id="introduction" class="col-md-5 mt-5 pt-5">
-          <div>
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-              Welcome to Dev Resource Hub
-            </h1>
-            <p class="lead">
-              Discover a wealth of educational resources and tutorials designed
-              to elevate your development skills. From in-depth guides on React,
-              Vue.js, and Angular to a range of other tools and technologies,
-              our hub is your gateway to mastering modern web development.
-            </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-success btn-lg px-4 me-md-2">
-                Explore Resources
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-secondary btn-lg px-4"
-              >
-                Learn More
-              </button>
+      <section id="home" class="container my-5">
+        <div
+          class="row flex-column flex-md-row justify-content-between align-items-center"
+        >
+          <div id="introduction" class="col-12 col-md-5">
+            <div>
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                Welcome to Dev Resource Hub
+              </h1>
+              <p class="lead">
+                Discover a wealth of educational resources and tutorials
+                designed to elevate your development skills. From in-depth
+                guides on React, Vue.js, and Angular to a range of other tools
+                and technologies, our hub is your gateway to mastering modern
+                web development.
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button
+                  type="button"
+                  class="btn btn-success btn-lg px-4 me-md-2"
+                >
+                  Explore Resources
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary btn-lg px-4 mb-5 mb-md-0"
+                >
+                  Learn More
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div id="featured" class="col-md-5">
-          <div
-            id="carouselExampleCaptions"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item">
-                <img
-                  src="./images/react.jpg"
-                  class="d-block w-100"
-                  alt="react"
-                />
-                <div
-                  class="carousel-caption d-none d-md-flex flex-md-column justify-content-md-center"
-                >
-                  <h5>React</h5>
-                  <p>
-                    A powerful JavaScript library for building dynamic and
-                    interactive user interfaces with a component-based
-                    architecture.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item active">
-                <img
-                  src="./images/vue.png"
-                  class="d-block w-100"
-                  alt="vue.js"
-                />
-                <div
-                  class="carousel-caption d-none d-md-flex flex-md-column justify-content-md-center"
-                >
-                  <h5>Vue.js</h5>
-                  <p>
-                    A progressive framework for building user interfaces,
-                    offering a flexible and approachable design for scalable web
-                    applications.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./images/angular.png"
-                  class="d-block w-100"
-                  alt="angular"
-                />
-                <div
-                  class="carousel-caption d-none d-md-flex flex-md-column justify-content-md-center"
-                >
-                  <h5>Angular</h5>
-                  <p>
-                    A robust framework for developing single-page applications
-                    with a comprehensive set of tools and a strong focus on
-                    maintainability and scalability.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev"
+          <div id="featured" class="col-12 col-md-5">
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide"
+              data-bs-ride="carousel"
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <div class="overlay"></div>
+                  <img
+                    src="./images/react.jpg"
+                    class="d-block w-100"
+                    alt="react"
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-flex flex-md-column justify-content-md-center"
+                  >
+                    <h5>React</h5>
+                    <p>
+                      A powerful JavaScript library for building dynamic and
+                      interactive user interfaces with a component-based
+                      architecture.
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-success mx-auto"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-item active">
+                  <div class="overlay"></div>
+                  <img
+                    src="./images/vue.png"
+                    class="d-block w-100"
+                    alt="vue.js"
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-flex flex-md-column justify-content-md-center"
+                  >
+                    <h5>Vue.js</h5>
+                    <p>
+                      A progressive framework for building user interfaces,
+                      offering a flexible and approachable design for scalable
+                      web applications.
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-success mx-auto"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="overlay"></div>
+                  <img
+                    src="./images/angular.png"
+                    class="d-block w-100"
+                    alt="angular"
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-flex flex-md-column justify-content-md-center"
+                  >
+                    <h5>Angular</h5>
+                    <p>
+                      A robust framework for developing single-page applications
+                      with a comprehensive set of tools and a strong focus on
+                      maintainability and scalability.
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-outline-success mx-auto"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
       <!-- End of Home Section -->
 
       <!-- Categories Section -->
-      <section id="categories-section">
-        <div id="categories"></div>
-        <div id="resources"></div>
+      <section id="categories-section" class="container">
+        <div class="row mb-5">
+          <div id="categories" class="col-md-6">
+            <h2 class="text-center mb-5">Categories</h2>
+            <div class="list-group mx-auto">
+              <ul class="list-group">
+                <li
+                  class="list-group-item d-flex align-items-center justify-content-between"
+                >
+                  Front-End Web Development
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    value="front-end"
+                  >
+                    View Resources
+                  </button>
+                </li>
+                <li
+                  class="list-group-item d-flex align-items-center justify-content-between"
+                >
+                  Back-End Web Development
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    value="back-end"
+                  >
+                    View Resources
+                  </button>
+                </li>
+                <li
+                  class="list-group-item d-flex align-items-center justify-content-between"
+                >
+                  Full-Stack Web Development
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    value="full-stack"
+                  >
+                    View Resources
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="resources" class="col-md-6">
+            <h2 class="text-center mb-5">Resources</h2>
+            <div class="card selected-category-none">
+              <div class="card-header">Resources</div>
+              <div class="card-body">
+                <h5 class="card-title">No Categories Selected</h5>
+                <p class="card-text mb-0">
+                  It looks like you haven’t selected a category yet. To explore
+                  our resources and find the perfect category for your needs,
+                  click the "View Resources" button in the categories section.
+                </p>
+              </div>
+            </div>
+
+            <div class="card front-end-card d-none">
+              <div class="card-header">Front-End Web Development</div>
+              <div class="card-body">
+                <h5 class="card-title">Build Beautiful Interfaces</h5>
+                <p class="card-text mb-0">
+                  Learn to create visually appealing user interfaces using HTML,
+                  CSS, and JavaScript. Develop skills in layout design,
+                  responsive design, and modern front-end frameworks.
+                </p>
+                <a href="#" class="card-link">Discover</a>
+                <h5 class="card-title mt-3">Enhance User Experience</h5>
+                <p class="card-text mb-0">
+                  Focus on improving usability and user experience. Discover
+                  best practices for interaction design, performance
+                  optimization, and accessibility.
+                </p>
+                <a href="#" class="card-link">Discover</a>
+                <h5 class="card-title mt-3">Explore Front-End Frameworks</h5>
+                <p class="card-text mb-0">
+                  Dive into popular front-end frameworks like React, Vue.js, and
+                  Angular. Build dynamic and interactive web applications with
+                  these powerful tools.
+                </p>
+                <a href="#" class="card-link">Discover</a>
+              </div>
+            </div>
+
+            <div class="card back-end-card d-none">
+              <div class="card-header">Back-End Development</div>
+              <div class="card-body">
+                <h5 class="card-title">Master Server-Side Programming</h5>
+                <p class="card-text mb-0">
+                  Learn server-side languages like Node.js, Python, and Ruby.
+                  Develop and manage server logic, handle requests, and interact
+                  with databases.
+                </p>
+                <a href="#" class="card-link">Discover</a>
+                <h5 class="card-title mt-3">Understand Database Management</h5>
+                <p class="card-text mb-0">
+                  Gain expertise in database design and management with SQL and
+                  NoSQL databases. Learn to create, read, update, and delete
+                  data efficiently.
+                </p>
+                <a href="#" class="card-link">Discover</a>
+                <h5 class="card-title mt-3">Build and Integrate APIs</h5>
+                <p class="card-text mb-0">
+                  Discover how to build RESTful APIs and integrate third-party
+                  services. Learn to handle authentication, data exchange, and
+                  error handling.
+                </p>
+                <a href="#" class="card-link">Discover</a>
+              </div>
+            </div>
+
+            <div class="card full-stack-card d-none">
+              <div class="card-header">Full-Stack Development</div>
+              <div class="card-body">
+                <h5 class="card-title">Develop End-to-End Solutions</h5>
+                <p class="card-text mb-0">
+                  Acquire the skills to build complete applications from
+                  scratch. Combine front-end and back-end knowledge to create
+                  robust, full-featured applications.
+                </p>
+                <a href="#" class="card-link">Discover</a>
+                <h5 class="card-title mt-3">Manage Application Architecture</h5>
+                <p class="card-text mb-0">
+                  Learn about application architecture and design patterns.
+                  Understand how to structure and maintain codebases for
+                  scalability and efficiency.
+                </p>
+                <a href="#" class="card-link">Discover</a>
+                <h5 class="card-title mt-3">
+                  Deploy and Maintain Applications
+                </h5>
+                <p class="card-text mb-0">
+                  Get hands-on experience with deployment processes, server
+                  management, and continuous integration. Ensure your
+                  applications run smoothly in production environments.
+                </p>
+                <a href="#" class="card-link">Discover</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- End of Categories Section -->
 
       <!-- About Section -->
-      <section id="about">
-        <div id="mission"></div>
-        <div id="contact"></div>
+      <section id="about" class="container">
+        <h2 class="text-center mb-3"><strong>About Us</strong></h2>
+        <div class="row">
+          <div id="mission" class="col-12 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="text-center mb-3">Our Mission</h3>
+                <p>
+                  At Dev Resource Hub, our mission is to empower developers of
+                  all levels by providing a comprehensive and accessible
+                  resource hub dedicated to modern web development. We strive to
+                  deliver high-quality, up-to-date educational materials and
+                  tutorials that cover a wide range of tools and technologies,
+                  including React, Vue.js, Angular, and beyond.
+                </p>
+                <p>
+                  Our goal is to foster a community of learners and
+                  professionals who are passionate about advancing their skills
+                  and staying at the forefront of the tech industry. Through our
+                  curated content, practical guides, and expert insights, we aim
+                  to be the go-to destination for anyone looking to enhance
+                  their development expertise and drive their projects to
+                  success.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="contact-form" class="col-12 col-md-6">
+            <h3 class="text-center mb-4">Contact Us</h3>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInputName"
+                placeholder="Jane Doe"
+              />
+              <label for="floatingInputName">Full Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInputEmail"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInputEmail">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea"
+              ></textarea>
+              <label for="floatingTextarea">Comments</label>
+            </div>
+            <button type="button" class="btn btn-success">Submit</button>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3 class="text-center mb-4">Find Us</h3>
+            <div id="google-maps">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.4101323618456!2d121.04110297476721!3d14.632645085857503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7f5db7f5e3f%3A0xe15d2d6a4453ed00!2sZuitt%20QC!5e0!3m2!1sen!2sph!4v1722788854030!5m2!1sen!2sph"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- End of About Section -->
     </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary"
+                >Categories</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+            </li>
+          </ul>
+          <p class="text-center text-body-secondary">
+            © 2024 Dev Resource Hub. Created by Khryzmiel Dabu
+          </p>
+        </footer>
+      </div>
+    </footer>
     <!-- End of Footer -->
 
     <!-- Bootstrap Script -->
@@ -239,5 +498,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- External Script -->
+    <script src="index.js"></script>
   </body>
 </html>
